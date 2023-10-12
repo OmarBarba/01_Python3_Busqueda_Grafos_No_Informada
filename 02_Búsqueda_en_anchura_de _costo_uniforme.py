@@ -29,4 +29,4 @@ graph = {
 start_node = 'A'                # Nodo de inicio
 goal_node = 'F'                # Nodo objetivo
 result = ucs(graph, start_node, goal_node)  # Llamada a la función UCS
-print(result)                   # Imprimir la ruta encontrada
+print(result) 

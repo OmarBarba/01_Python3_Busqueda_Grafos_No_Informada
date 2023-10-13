@@ -11,7 +11,12 @@ def dls(graph, start, goal, max_depth):
             if neighbor not in path:
                 stack.append((neighbor, path + [neighbor]))  # Agregar vecinos no visitados
 
-def iddfs(graph, start, goal):
+# función iddfs (Iterative Deepening Depth-First Search) realiza una búsqueda en profundidad iterativa. 
+# Comienza con un límite de profundidad de 0 y, 
+# en cada iteración, aumenta el límite de profundidad en 1.
+#  Llama a la función dls con el nuevo límite de profundidad y devuelve la ruta si se encuentra una solución.
+
+def iddfs(graph, start, goal): 
     depth = 0
     while True:
         result = dls(graph, start, goal, depth)

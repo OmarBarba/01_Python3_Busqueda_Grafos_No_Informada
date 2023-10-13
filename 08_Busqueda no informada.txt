@@ -1,0 +1,51 @@
+ La búsqueda no informada, también conocida como búsqueda ciega, es un enfoque de búsqueda en inteligencia artificial en el que el algoritmo no tiene información adicional sobre el espacio 
+ de búsqueda, aparte de las reglas que rigen el problema. Los algoritmos de búsqueda no informada exploran el espacio de búsqueda paso a paso, evaluando y comparando estados para encontrar 
+ una solución sin utilizar heurísticas o información adicional.
+
+En esencia, los algoritmos de búsqueda no informada se basan en la exploración exhaustiva de posibles estados y rutas, sin considerar la calidad o el costo de las acciones. Estos algoritmos 
+se utilizan para encontrar soluciones en problemas de búsqueda y navegación en grafos, como encontrar rutas en un laberinto, planificar movimientos en un juego de ajedrez o encontrar el camino 
+más corto en un mapa.
+
+Los tipos de búsqueda no informada incluyen Búsqueda en Anchura (BFS), Búsqueda en Profundidad (DFS), Búsqueda en Profundidad Limitada, Búsqueda en Profundidad Iterativa, Búsqueda Bidireccional 
+y Búsqueda en Grafos. Cada uno de estos enfoques tiene sus propias características y aplicaciones específicas, y se seleccionan según las necesidades del problema y
+las características del espacio de búsqueda.   
+
+   
+    
+    Búsqueda en Anchura (Breadth-First Search - BFS):
+        Comienza en el nodo de inicio y explora todos los nodos vecinos antes de avanzar al siguiente nivel.
+        Utiliza una cola para mantener un orden de exploración, lo que garantiza que se explore primero el nivel más cercano al nodo de inicio antes de avanzar a niveles más profundos.
+        Es eficiente para encontrar la ruta más corta en un grafo no ponderado.
+        Se utiliza comúnmente en algoritmos de resolución de laberintos y para la búsqueda en grafos no ponderados.
+    
+    Búsqueda en Anchura de Costo Uniforme (Uniform Cost Search - UCS):
+        Es similar a la Búsqueda en Anchura (BFS), pero en lugar de asumir costos uniformes para cada transición, considera costos diferentes para llegar a cada nodo.
+        Utiliza una cola de prioridad para mantener un orden de exploración, priorizando los nodos con el costo más bajo.
+        Encuentra la ruta más corta en un grafo ponderado (con costos asociados a las aristas) y puede manejar grafos no ponderados.
+        Es útil en aplicaciones donde se requiere encontrar la ruta más eficiente en términos de costo, como la planificación de rutas y navegación.
+
+    Búsqueda en Profundidad (Depth-First Search - DFS):
+        Comienza en el nodo de inicio y se adentra en la profundidad del grafo antes de retroceder a nodos anteriores.
+        Utiliza una pila o recursión para llevar un seguimiento de los nodos a explorar.
+        No garantiza encontrar la ruta más corta y puede quedar atrapada en ciclos si no se utiliza un mecanismo de prevención.
+        Se utiliza en la exploración de árboles y grafos, así como en problemas de búsqueda de soluciones.
+
+    Búsqueda en Profundidad Limitada (Limited Depth-First Search):
+        Es una variante de DFS que se detiene después de explorar un número máximo de niveles o profundidad.
+        Útil cuando se desea limitar la profundidad de búsqueda en un árbol o grafo, evitando la exploración excesiva en profundidad.
+
+    Búsqueda en Profundidad Iterativa (Iterative Deepening Depth-First Search - IDDFS):
+        Combina la idea de BFS y DFS limitado.
+        Realiza múltiples iteraciones aumentando gradualmente la profundidad máxima permitida en cada iteración.
+        Garantiza encontrar la ruta más corta en un grafo no ponderado, al tiempo que es eficiente en la práctica.
+        Es útil para búsquedas en grafos grandes donde no se conoce la profundidad óptima de la solución.
+
+    Búsqueda Bidireccional (Bidirectional Search):
+        Realiza dos búsquedas simultáneas, una desde el nodo de inicio y otra desde el nodo objetivo.
+        Se detiene cuando ambas búsquedas se encuentran en un nodo común, lo que reduce significativamente el tiempo de búsqueda.
+        Eficiente para encontrar rutas en grafos grandes y se utiliza en aplicaciones como la navegación GPS.
+
+    Búsqueda en Grafos (Graph Search):
+        No se refiere a una estrategia específica, sino a la idea general de búsqueda en un grafo sin una estrategia predeterminada.
+        Puede implementarse utilizando BFS o DFS, o combinando múltiples estrategias de búsqueda.
+        Se utiliza cuando se necesita una búsqueda personalizada o se combina con otras estrategias según los requisitos del problema.

@@ -1,4 +1,4 @@
-
+#Busqueda en grafos 
 
 def graph_search(graph, start, goal, search_type='bfs'):
     visited = set()

@@ -1,3 +1,5 @@
+#búsqueda en anchura costo uniforme Uniform Cost Search - UCS:
+
 import heapq
 
 def ucs(graph, start, goal):
